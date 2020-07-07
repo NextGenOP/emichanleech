@@ -72,11 +72,11 @@ if __name__ == "__main__" :
     )
     app.add_handler(incoming_purge_message_handler)
     #
-    incoming_youtube_dl_handler = MessageHandler(
-        incoming_youtube_dl_f,
-        filters=Filters.command(["yt"]) & Filters.chat(chats=AUTH_CHANNEL)
-    )
-    app.add_handler(incoming_youtube_dl_handler)
+    # incoming_youtube_dl_handler = MessageHandler(
+        # incoming_youtube_dl_f,
+        # filters=Filters.command(["yt"]) & Filters.chat(chats=AUTH_CHANNEL)
+    # )
+    # app.add_handler(incoming_youtube_dl_handler)
     #
     status_message_handler = MessageHandler(
         status_message_f,
