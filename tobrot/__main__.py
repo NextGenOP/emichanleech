@@ -63,8 +63,8 @@ if __name__ == "__main__" :
     incoming_message_handler = MessageHandler(
         incoming_message_f,
         filters=Filters.command(["unduh"]) & Filters.chat(chats=AUTH_CHANNEL)
-    # )
-    # app.add_handler(incoming_message_handler)
+    )
+    app.add_handler(incoming_message_handler)
     #
     incoming_purge_message_handler = MessageHandler(
         incoming_purge_message_f,
@@ -75,8 +75,8 @@ if __name__ == "__main__" :
     incoming_youtube_dl_handler = MessageHandler(
         incoming_youtube_dl_f,
         filters=Filters.command(["yt"]) & Filters.chat(chats=AUTH_CHANNEL)
-    # )
-    # app.add_handler(incoming_youtube_dl_handler)
+    )
+    app.add_handler(incoming_youtube_dl_handler)
     #
     status_message_handler = MessageHandler(
         status_message_f,
